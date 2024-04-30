@@ -90,7 +90,7 @@ function getWritePermissionInfo(){
     $resp = [];
     
     if (!is_writable(dirname(__FILE__).'/spear/config'))  //for db.php
-        array_push($resp,dirname(__FILE__).'/spear');
+        array_push($resp,dirname(__FILE__).'/spear/config');
 
     if (!is_writable(dirname(__FILE__).'/spear/uploads'))   //for uploads w.r.t mail
         array_push($resp,dirname(__FILE__).'/spear/uploads');
